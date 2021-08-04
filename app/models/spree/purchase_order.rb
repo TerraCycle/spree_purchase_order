@@ -5,7 +5,7 @@ module Spree
     belongs_to :payment_method
     has_many :payments, as: :source
 
-    validates :po_number, :organization_name, presence: true
+    validates :po_number, presence: true
 
     def actions
       %w(complete void)
